@@ -64,7 +64,7 @@ export default function ComingSoon() {
           component="p"
           gutterBottom
           sx={{
-            fontSize: { xs: "1.2rem", sm: "1.8rem", md: "2.2rem" },
+            fontSize: { xs: "1.2rem", sm: "1.8rem", md: "2.3rem" },
             fontWeight: "lighter",
             letterSpacing: "1px",
             marginBottom: "30px",
