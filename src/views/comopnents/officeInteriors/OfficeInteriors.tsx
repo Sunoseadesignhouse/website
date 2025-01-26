@@ -7,27 +7,27 @@ import theme from "../../../global/theme";
 export default function OfficeInteriors() {
   const images = [
     {
-      src: "https://images.pexels.com/photos/4064449/pexels-photo-4064449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/159839/office-home-house-desk-159839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 1",
     },
     {
-      src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/280471/pexels-photo-280471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 2",
     },
     {
-      src: "https://images.pexels.com/photos/4064449/pexels-photo-4064449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/5506031/pexels-photo-5506031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 3",
     },
     {
-      src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/16323454/pexels-photo-16323454/free-photo-of-men-working-on-laptop-in-coworking-space.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 4",
     },
     {
-      src: "https://images.pexels.com/photos/4064449/pexels-photo-4064449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 5",
     },
     {
-      src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       alt: "Office 6",
     },
   ];
@@ -53,37 +53,39 @@ export default function OfficeInteriors() {
   };
 
   return (
-    <Box sx={{
-      // backgroundColor: theme.palette.background.paper,
-      display: "flex", 
-      flexDirection: "column", 
-      justifyContent: "center",
-      alignItems: "center", 
-    }}>
-
-    <Box sx={{ width: "95%", marginX: "auto", marginTop: 4 }}>
+    <Box
+      id="officeInteriors"
+      sx={{
+        width: "95%",
+        marginX: "auto",
+        marginY: 4,
+        backgroundColor: theme.palette.background.paper,
+        padding: "40px 0",
+        borderRadius: "16px",
+      }}
+    >
       <Box
         sx={{
-          mb: 2,
+          mb: 4,
           maxWidth: "900px",
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          justifyContent: "center", 
-          alignItems: "center", 
-          marginX: "auto", 
+          justifyContent: "center",
+          alignItems: "center",
+          marginX: "auto",
         }}
       >
         <Typography
           variant="h4"
           textAlign="center"
           sx={{
-            marginBottom: 1,
             fontWeight: "bold",
-            color: theme.palette.primary.main,
+            color: theme.palette.secondary.dark,
           }}
         >
-          Office Interiors
+          Office{" "}
+          <span style={{ color: theme.palette.text.primary }}>Interiors</span>
         </Typography>
         <Typography variant="body1" textAlign="center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
@@ -97,7 +99,7 @@ export default function OfficeInteriors() {
           <Box
             key={index}
             sx={{
-              paddingX: 1,
+              paddingX: 3,
               display: "flex",
               justifyContent: "center",
             }}
@@ -109,14 +111,13 @@ export default function OfficeInteriors() {
                 width: "100%",
                 height: "200px",
                 objectFit: "cover",
-                borderRadius: "16px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                // borderRadius: "16px",
+                // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
               }}
             />
           </Box>
         ))}
       </Slider>
-    </Box>
     </Box>
   );
 }

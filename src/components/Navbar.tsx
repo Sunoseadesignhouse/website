@@ -1,4 +1,12 @@
-import { AppBar, Box, Toolbar, Slide, useScrollTrigger } from "@mui/material";
+import React from "react";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Slide,
+  useScrollTrigger,
+  Button,
+} from "@mui/material";
 import theme from "../global/theme";
 import logo from "../assets/sos-logo.webp";
 
@@ -27,14 +35,64 @@ export default function Navbar() {
           <Toolbar>
             <Box
               sx={{
-                width: "100%",
                 display: "flex",
-                justifyContent: "center", // Centers horizontally
-                alignItems: "center", // Centers vertically
-                p: 3,
+                justifyContent: "space-between",
+                alignItems: "center",
+                width: "100%",
               }}
             >
-              <img src={logo} alt="Logo" width="50px" />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  flexGrow: 1,
+                }}
+              >
+                <Button
+                  href="#officeInteriors"
+                  sx={{ color: theme.palette.secondary.dark }}
+                >
+                  Office Interiors
+                </Button>
+                <Button
+                  href="#cafeInteriors"
+                  sx={{ color: theme.palette.secondary.dark }}
+                >
+                  Cafe Interiors
+                </Button>
+              </Box>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  p: 3,
+                }}
+              >
+                <img src={logo} alt="Logo" width="50px" />
+              </Box>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  flexGrow: 1,
+                }}
+              >
+                <Button
+                  href="#architectural"
+                  sx={{ color: theme.palette.secondary.dark }}
+                >
+                  Architectural
+                </Button>
+                <Button
+                  href="#cafeInteriors"
+                  sx={{ color: theme.palette.secondary.dark }}
+                >
+                  Cafe Interiors
+                </Button>
+              </Box>
             </Box>
           </Toolbar>
         </AppBar>

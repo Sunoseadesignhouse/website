@@ -28,7 +28,6 @@ export default function CafeInteriors() {
   const settings = {
     dots: true,
     rtl: true,
-    fadeL: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
@@ -39,10 +38,12 @@ export default function CafeInteriors() {
 
   return (
     <Box
+    id="cafeInteriors"
       sx={{
         width: "95%",
         marginX: "auto",
         marginTop: 9,
+        p: 2,
       }}
     >
       <Typography
@@ -97,7 +98,6 @@ export default function CafeInteriors() {
                 key={index}
                 sx={{
                   p: 2,
-                  marginBottom: 2, // Space between the slides
                 }}
               >
                 <img
