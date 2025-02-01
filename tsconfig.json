@@ -9,7 +9,10 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "lib": ["DOM", "ESNext"],  
+    "target": "ESNext",       
+    "skipLibCheck": true       
   },
   "include": ["src/**/*"]
 }
