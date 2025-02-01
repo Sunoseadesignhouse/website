@@ -87,10 +87,10 @@ export default function Navbar() {
                   Architectural
                 </Button>
                 <Button
-                  href="#cafeInteriors"
+                  href="#3dDesign"
                   sx={{ color: theme.palette.secondary.dark }}
                 >
-                  Cafe Interiors
+                  3D Design
                 </Button>
               </Box>
             </Box>

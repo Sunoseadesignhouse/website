@@ -42,11 +42,12 @@ export default function Hero() {
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: "bold", mb: 2 }}>
-          Welcome to the Hero Section
+          Transform Your Vision into Reality
         </Typography>
         <Typography variant="body1" sx={{ maxWidth: "600px", mx: "auto" }}>
-          This is a dummy text overlay. You can use this section to highlight
-          your website's main content or add a call-to-action button.
+          Discover innovative designs and creative solutions that redefine
+          spaces. From stunning interiors to modern architectural marvels, we
+          bring your dreams to life with precision and style.
         </Typography>
       </Box>
     </Box>

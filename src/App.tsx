@@ -4,6 +4,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import Navbar from "./components/Navbar";
 import theme from "./global/theme";
 import Views from "./views/Views";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <CssBaseline />
         <Navbar />
         <Views />
+        <Footer />
       </ThemeProvider>
     </>
   );
