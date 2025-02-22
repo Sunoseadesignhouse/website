@@ -5,6 +5,7 @@ import Architechrural from "./comopnents/architechtural/Architechrural";
 import Design from "./comopnents/design/Design";
 import ModularFurniture from "./comopnents/modular-furniture/ModularFurniture";
 import Testimonials from "./comopnents/testimonials/Testimonials";
+import ContactForm from "./comopnents/contact-form/ContactForm";
 
 export default function Views() {
   return (
@@ -16,6 +17,7 @@ export default function Views() {
       <Design />
       <ModularFurniture />
       <Testimonials />
+      <ContactForm />
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function Footer() {
       component="footer"
       sx={{
         width: "100%",
-        backgroundColor: theme.palette.background.paper,
+        // backgroundColor: theme.palette.background.paper,
         color: "text.primary",
         textAlign: "center",
         py: 4,
