@@ -1,7 +1,6 @@
 import { Box, Typography, IconButton, Link } from "@mui/material";
 import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
 import logo from "../assets/sos-logo.webp"; // Replace with your logo path
-import theme from "../global/theme";
 
 export default function Footer() {
   return (
